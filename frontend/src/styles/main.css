@@ -1,0 +1,129 @@
+.form-container {
+    width: 397px;
+}
+
+.btn-toggle.collapsed i.bi-chevron-right {
+    transform: rotate(0deg);
+}
+
+.btn-toggle.active i.bi-chevron-right {
+    transform: rotate(90deg);
+}
+
+
+.btn-toggle.active {
+    background-color: #0d6efd !important;
+    color: white !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.submenu-link {
+    background-color: white;
+    color: #0d6efd;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px 0 8px 16px;
+    transition: background 0.2s;
+}
+
+.submenu-link:hover,
+.submenu-link.active {
+    color: #e9ecef;
+    background-color: #0d6efd;
+    border-radius: 0px;
+}
+
+.accordion-item-custom.open {
+    border: 1px solid #0d6efd;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+/*Доходы и расходы*/
+.main-container {
+    flex-grow: 1;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.mt-100px {
+    margin-top: 100px;
+}
+
+.btn-filter {
+    width: 100px;
+}
+
+.custom-form {
+    max-width: 397px;
+}
+
+.form-select {
+    background-image: none;
+}
+
+.form-select:focus,
+.form-control:focus {
+    box-shadow: none;
+    border-color: inherit;
+}
+
+.income {
+    width: 352px;
+    min-height: 121px;
+}
+
+.custom-pie {
+    max-width: 437px;
+}
+
+.custom-line {
+    width: 1px;
+    height: 450px;
+    margin: 50px 84px 0 84px;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #CED4DA;
+    z-index: 1000;
+    display: none;
+    width: 530px;
+}
+
+.popup-content {
+    padding: 40px 0;
+}
+
+.popup-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+
+/* .logout-link {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    text-decoration: none;
+    padding: 10px;
+    border: ;
+} */

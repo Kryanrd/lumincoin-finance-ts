@@ -1,0 +1,62 @@
+<div class="d-flex">
+    <div class="d-flex flex-column flex-shrink-0 min-vh-100 py-5 bg-light" style="width: 219px;">
+        <a href="/" class="d-flex justify-content-center w-100 mx-auto mb-5">
+            <img src="../images/logo-mini.png" alt="Логотип">
+        </a>
+        <ul class="nav nav-pills flex-column mb-auto px-3 pt-5 border-top border-secondary-subtle gap-2">
+            <li class="nav-item">
+                <a href="/" class="nav-link py-2 pe-0" aria-current="page">
+                    <i class="bi bi-house"></i>
+                    Главная
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/incomes-expenses" class="nav-link py-2 pe-0">
+                    <i class="bi bi-cash-coin"></i>
+                    Доходы & Расходы
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <div class="accordion-item-custom" id="categoriesGroup">
+                    <button class="btn btn-toggle d-flex align-items-center rounded w-100 border-0 py-2 ps-3"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                        <span>Категории</span>
+                        <i class="bi bi-chevron-right ms-auto"></i>
+                    </button>
+                    <div class="collapse" id="home-collapse">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="/incomes" class="submenu-link d-block py-1 ">Доходы</a>
+                            </li>
+                            <li><a href="/expenses" class="submenu-link d-block py-1">Расходы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <p class="text-primary-emphasis ps-3">Баланс:<span class="ms-2 text-primary" id="balance">500$</span></p>
+        <div class="d-flex align-items-center gap-3 pt-4 ps-4 border-top border-secondary-subtle position-relative">
+            <div>
+                <img src="../images/icon.png" alt="Иконка" id="logout-btn" role="button">
+            </div>
+            <div class="text-primary-emphasis fs-6" id="user">
+                Roman Chernov
+            </div>
+        </div>
+    </div>
+    <div class="main-container" id="content-layout">
+
+    </div>
+
+    <div id="layoutOverlay" class="popup-overlay"></div>
+
+    <div id="layoutPopup" class="popup">
+        <div class="popup-content">
+            <p class="fs-5 text-primary-emphasis fw-medium text-center mb-3">Вы хотите выйти из аккаунта?
+            </p>
+            <div class="popup-buttons">
+                <a href="/logout" class="btn btn-success px-3">Выйти</a>
+                <button class="btn btn-danger px-3" id="cancelLogout">Отмена</button>
+            </div>
+        </div>
+    </div>
+</div>

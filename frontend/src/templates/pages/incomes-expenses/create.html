@@ -1,0 +1,17 @@
+<h1 class="text-primary-emphasis mt-100px lh-1 mb-5">Создание дохода/расхода</h1>
+<div class="custom-form d-flex flex-column gap-3 mb-3">
+    <select class="form-select text-secondary ps-3 text-black" id="typeSelect">
+    </select>
+    <select class="form-select ps-3 text-black" id="categorySelect">
+    </select>
+    <input type="number" placeholder="Сумма в $..." class="form-control ps-3 text-black" id="amountInput">
+    <span id="amountInput-error" class="error invalid-feedback">Заполните сумму</span>
+    <input type="date" placeholder="Дата..." class="form-control ps-3 text-black" id="dateInput">
+    <span id="dateInput-error" class="error invalid-feedback">Заполните дату</span>
+    <input type="text" placeholder="Комментарий..." class="form-control ps-3 text-black" id="commentInput">
+    <span id="commentInput-error" class="error invalid-feedback">Заполните поле</span>
+    <div class="d-flex gap-2">
+        <button class="btn btn-success px-3 py-2 w-25" id="createButton">Создать</button>
+        <button class="btn btn-danger px-3 py-2 w-25" id="cancelButton">Отмена</button>
+    </div>
+</div>

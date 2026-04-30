@@ -1,0 +1,48 @@
+<h1 class="text-primary-emphasis mt-100px lh-1 mb-5">Доходы и расходы</h1>
+<div class="d-flex gap-2 mb-5">
+    <a href="/incomes-expenses/create?type=income" class="btn btn-success px-3 py-2">Создать
+        доход</a>
+    <a href="/incomes-expenses/create?type=expense" class="btn btn-danger px-3 py-2">Создать
+        расход</a>
+</div>
+<div class="d-flex gap-4 align-items-center mb-5">
+    <button class="btn btn-secondary btn-filter px-3 py-2" data-period="today">Сегодня</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="week">Неделя</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="month">Месяц</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="year">Год</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="all">Все</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="interval">Интервал</button>
+    <div id="interval-dates" class="d-flex gap-2 align-items-center">
+        <label>с</label>
+        <input type="date" id="dateFrom" class="form-control w-auto">
+        <label>по</label>
+        <input type="date" id="dateTo" class="form-control w-auto">
+    </div>
+</div>
+
+<table class="table" id="incomes-expenses-table">
+    <thead class="border-top text-center">
+        <tr>
+            <th scope="col" class="text-primary-emphasis p-3">№ операции</th>
+            <th scope="col" class="text-primary-emphasis p-3">Тип</th>
+            <th scope="col" class="text-primary-emphasis p-3">Категория</th>
+            <th scope="col" class="text-primary-emphasis p-3">Сумма</th>
+            <th scope="col" class="text-primary-emphasis p-3">Дата</th>
+            <th scope="col" class="text-primary-emphasis p-3">Комментарий</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<div id="ieOverlay" class="popup-overlay"></div>
+<div id="iePopup" class="popup">
+    <div class="popup-content">
+        <p class="text-primary-emphasis text-center fs-5 fw-medium">Вы действительно хотите удалить категорию?</p>
+        <div class="popup-buttons">
+            <button id="confirmDelete" class="btn btn-success">Да, удалить</button>
+            <button id="cancelDelete" class="btn btn-danger">Не удалять</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<h1 class="text-primary-emphasis mt-100px lh-1 mb-5">Главная</h1>
+<div class="d-flex gap-4 align-items-center mb-5">
+   <button class="btn btn-secondary btn-filter px-3 py-2" data-period="today">Сегодня</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="week">Неделя</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="month">Месяц</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="year">Год</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="all">Все</button>
+    <button class="btn btn-outline-secondary btn-filter px-3 py-2" data-period="interval">Интервал</button>
+    <div id="interval-dates" class="d-flex gap-2 align-items-center">
+        <label>с</label>
+        <input type="date" id="dateFrom" class="form-control w-auto">
+        <label>по</label>
+        <input type="date" id="dateTo" class="form-control w-auto">
+    </div>
+</div>
+
+<div class="d-flex align-items-center">
+    <div class="custom-pie">
+        <h3 class="text-primary-emphasis text-center mb-4">Доходы</h3>
+        <canvas id="incomeChart" width="437" height="437"></canvas>
+    </div>
+    <div class="bg-body-secondary custom-line"></div>
+    <div class="custom-pie">
+        <h3 class="text-primary-emphasis text-center mb-4">Расходы</h3>
+        <canvas id="expenseChart" width="437" height="437"></canvas>
+    </div>
+</div>
+
