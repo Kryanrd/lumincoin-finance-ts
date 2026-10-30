@@ -1,4 +1,4 @@
-# Lumincoin Finance — TypeScript Version
+# Lumincoin Finance - TypeScript Version
 
 ## О проекте
 
